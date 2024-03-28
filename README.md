@@ -17,7 +17,6 @@ Preview of the Web Page https://d.pr/v/M15yRT
 ## Features
 
 - **Products**: Browse through a selection of coffee-related products.
-- **Blog**: Read insightful blog posts about coffee.
 - **Guides**: Learn how to brew coffee with helpful guides.
 - **Pictures**: Enjoy numerous pictures related to coffee throughout the web page.
 - **Social Media**: Connect with us on various social media platforms.
