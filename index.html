@@ -1,238 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css"> 
-    </head> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Owl Coffee</title>
+</head>
+
 <body>
-    <div class="announcement-bar" role="region" aria-label="Announcement">
-        <p class="announcement-bar_message h5">
-            <span>FREE SHIPPING ON ALL U.S. ORDERS $49+</span>
-        </p>
-    </div>
-    <nav class="navbar">
-        <div class="navbar_container">
-        <ul class="navbar_menu">
-          <li class="navbar_item">
-            <a href="#shop">SHOP</a>
-            <img class="arrow" src="/ESPRO/arrow-ios-downward-fill.svg">
-            </li>
-          <li class="navbar_item">
-            <a href="#ourStory">OUR STORY</a></li>
-          <li><a href="/" id="navbar__logo">
-            <img src="/ESPRO/ESPRO Logo.svg">
-          </a></li>
-          <li class="navbar_item">
-            <a href="#brewGuides">BREW GUIDES</a></li>
-          <li class="navbar_item">
-            <a href="#blog">BLOG</a></li>
-          <li class="navbar_item">
-            <a href="#search">
-                <img src="/ESPRO/search-line.svg">
-            </a></li>
-          <li class="navbar_item">
-            <a href="#account">
-                <img src="/ESPRO/My%20Account%20icon.svg">
-            </a></li>
-          <li class="navbar_item">
-            <a href="#cart">
-                <img src="/ESPRO/Shopping%20bag%20icon.svg">
 
-            </a></li>
-        </ul>
+    <header>
+        <div class="logo">
+            <a href="#">Owl <span>Coffee</span></a>
         </div>
-      </nav>
-    
-    <div class="banner">
-        <img src="/ESPRO/innature.png">
-        <div class="banner_content">
-            <h2 class="banner_heading">BREW ANYWHERE. BE ANYWHERE.</h2>
-            <h5 class="banner_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.</h5>
-            <div class="banner_buttons">
-                <a href="/SHOP/all" class="button button--secondary">POUR ON THE GO</a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Owl Coffee</h2>
+        <p>Would you like to start the day with a cup of nice coffee?</p>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="menu-header">
+            <h3>Menu</h3>
+            <h4>Owl Coffee Menu</h4>
+        </div>
+        <div class="menu-content">
+            <div class="hot-coffees">
+                <div class="hot-coffees-image">
+                    <img src="ESPRO/poringcoffee.png" alt="">
+                </div>
+                <div class="hot-coffees-body">
+                    <h2>Hot Coffees</h2>
+                    <label>Embrace the warmth, savor the bold. Hot coffees, a rich brew to stir the soul, a comforting embrace in every fold.</label>
+                </div>
             </div>
-            <h4 class="explore">EXPLORE</h4>
-        </div>
-    </div>
-
-    <div class="products">
-
-    </div>
-
-    <div class="blog">
-        <div class="blog_text">
-            <h5 class="title1">DESIGNED FOR REAL LIFE</h5>
-            <h2 class="title2">COFFEE MADE FOR YOUR LIFE ON THE GO.</h2>
-            <h4 class="text">We understand coffee is a big part of your busy, active life. That’s why we create and develop products that allow you to bring your passion for coffee-when you want it- and wherever life takes you.</h4>
-            <img class="bottle" src="/ESPRO/mountain.png">
-            <img class="woman" src="/ESPRO/woman.png">
-            <img class="book" src="/ESPRO/book.png">
-            <img class="man" src="/ESPRO/tent.png">
-            <img class="bottle1" src="/ESPRO/bag.png">
-            <img class="hand" src="/ESPRO/presa.png">
-        </div>
-    </div>
-
-    <div class="products2">
-        <div class="product1">
-            <img class="pouring_coffee" src="/ESPRO/poringcoffee.png">
-            <div class="text1">FRENCH PRESS</div>
-        </div>
-        <div class="product2">
-            <img class="pouring_coffee1" src="/ESPRO/poringcoffee1.png">
-            <div class="text2">POUR OVER</div>
-        </div>
-        <div class="product3">
-            <img class="poringcoffee2" src="/ESPRO/kola.png">
-            <div class="text3">COLD BREW</div>
-        </div>
-        <div class="product_button">
-            <a href="/SHOP/all" class="product_button">SHOP ALL PRODUCTS</a>
-        </div>
-    </div>
-    
-    <div class="blog2">
-        <div class="first_part">
-            <img class="part_one" src="/ESPRO/view.png">
-            <h3 class="picture_title">MAKE EVERY CUP AN EXPERIENCE.</h3>
-            <h5 class="picture_text">Have your French pressed coffee anywhere with ESPRO’s Travel Press. A double micro-filter eliminates grit for your smoothest cup on the go, and the mug fits right in a car cup holder or bike’s water bottle cage.</h5>
-        </div>
-
-        <div class="second_part">
-            <img class="part_two" src="/ESPRO/teg.png">
-            <h1 class="below_picture">PRESS. SIP. ENJOY.</h1>
-        </div>
-    </div>
-
-    <div class="press">
-        <h5 class="press_title">IN THE PRESS</h5>
-        <h4 class="press_text">“The result is a richly flavored, super aromatic cup of coffee without the usual silt in the bottom. The press isn’t just for coffee, either—there’s also a tea filter available that isolates tea leaves to prevent oversteeping.”</h4>
-        <img class="paste" src="/ESPRO/past%20logo.svg">
-        <img class="homegrounds" src="/ESPRO/homegrounds.png">
-        <img class="marthastewart" src="/ESPRO/marthastewart.png">
-        <img class="buzzfeed" src="/ESPRO/buzzfeed.png">
-        <img class="fastcompany" src="/ESPRO/fastcompany.png">
-    </div>
-
-    <div class="box">
-        <div id="box1">
-            <h1 class="box_title">FRESH GROUNDS. 01 FRESH GROUNDS</h1>
-            <img class="car" src="/ESPRO/car.png">
-            <h5 class="episode">EPISODE 01: THE GREAT MIGRATION</h5>
-            <h3 class="box_title1">FRESH GROUNDS</h3>
-            <h5 class="box_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.</h5>
-            <div class="box_button">
-                <a href="https://www.youtube.com/watch?v=O9YnLFrM7Fs" target="_blank">
-                    <button>WATCH FILM</button>
-                </a>
+            <div class="cold-coffees">
+                <div class="cold-coffees-image">
+                    <img src="ESPRO/kola.png" alt="">
+                </div>
+                <div class="cold-coffees-body">
+                    <h2>Cold Coffees</h2>
+                    <label>Crisp and cool, a dance of delight. Cold coffees, a refreshing flight, awakening senses with every icy bite.</label>
+                </div>
+            </div>
+            <div class="frappucino-coffees">
+                <div class="frappucino-coffees-image">
+                    <img src="ESPRO/flower.png" alt="">
+                </div>
+                <div class="frappucino-coffees-body">
+                    <h2>Frappucino Coffees</h2>
+                    <label>Velvet whispers, indulgence divine. Frappe coffees, a taste so fine, a symphony of flavors that intertwine.</label>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="blog3">
-        <div class="first_box">
-            <h5 class="blog3_title">THE ULTIMATE BREW GUIDES</h5>
-            <h2 class="blog3_title1">COFFEE TO WATER RATIOS: HOW TO MEASURE COFFEE LIKE A PRO</h2>
-            <p class="blog3_text">You can taste it when you’ve brewed with the perfect coffee to water ratio. The acidity pops every so slightly, enhancing the rich flavors and aromas. Your coffee’s mouthfeel is smooth and satisfying. And the flavor is just strong enough that you can sense all its nuances across your 10,000 taste buds, but not so strong that it’s uncomfortable. It’s an incredible experience—and too often, a hard one to come by.</p>
-            <div class="blog3_button">
-                <a href="/BLOG">
-                    <button>LEARN MORE</button>
-                </a>
+
+    <div class="shop" id="shop">
+        <div class="shop-header">
+            <h3>Shop</h3>
+            <h4>Owl Coffee Drinks</h4>
+        </div>
+        <div class="shop-box">
+            <div class="item-1">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="ESPRO/Caramel-Macchiato-7.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">4.45$</label>
+                        <h3>Caramel Macchiato</h3>
+                        <label>Lorem ipsum dolor sit amet.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item-2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="ESPRO/Flat_white.jpeg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">3.75$</label>
+                        <h3>Flat White</h3>
+                        <label>Lorem ipsum dolor sit amet.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item-3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="ESPRO/Chocolate-Chip-Frappe-2-3.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">3.95$</label>
+                        <h3>Chocolate Frappucino</h3>
+                        <label>Lorem ipsum dolor sit amet.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="ESPRO/frappe-frappuccino.jpeg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">2.79$</label>
+                        <h3>Frappe</h3>
+                        <label>Lorem ipsum dolor sit amet.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item-5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="ESPRO/mocha-latte-13.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">3.45$</label>
+                        <h3>Caffe Mocha</h3>
+                        <label>Lorem ipsum dolor sit amet.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item-6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="ESPRO/Vanilla-Coffee-Frappuccino.webp">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">3.25$</label>
+                        <h3>Vanilla Frappucino</h3>
+                        <label>Lorem ipsum dolor sit amet.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item-7">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="ESPRO/white-chocolate-mocha-rec-card-feature.jpg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                        <label class="cash">6.60$</label>
+                        <h3>White Chocolate Mocha</h3>
+                        <label>Lorem ipsum dolor sit amet.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="item-8">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="ESPRO/icedcoffeelatte.jpeg">
+                    </div>
+                    <div class="card-body">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <label class="cash">5.65$</label>
+                        <h3>Ice Latte</h3>
+                        <label>Lorem ipsum dolor sit amet.</label>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="second_box">
-            <img src="/ESPRO/flower1.png">
-            <img src="/ESPRO/Group 6.svg">
+    <div class="contact" id="contact">
+        <div class="contact-box">
+            <div class="contact-image">
+                <img src="ESPRO/poringcoffee1.png">
+            </div>
+        </div>
+        <div class="contact-box">
+            <div class="contact-body">
+                <form>
+                    <h2>Contact Us</h2>
+                    <div class="form-content">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="email" required>
+                        <span></span>
+                        <label>Email</label>
+                    </div>
+                    <div class="form-content">
+                        <input type="text1" required>
+                        <span></span>
+                        <label>Your wish/request/suggestion</label>
+                    </div>
+                    <button type="submit">Send</button>
+                    
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch modal
+                    </button>
+                
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Modal content goes here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
-    <div class="socials">
-        <h4 class="socials_title">SHOW US YOUR BEST POUR.</h4>
-        <p class="socials_text">Making coffee better — one cup at a time. Share your best moments with us #ESPRO</p>
-        <div class="instagram">
-            <a href="https://www.instagram.com/">
-                <img src="/ESPRO/instagram.svg">
-                <button>FOLLOW US ON INSTAGRAM</button>
-            </a>
+
+    <div class="footer">
+        <div class="footer-box">
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/watch?v=cAslbJaSv90"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                <label>Copyright &copy; 2024</label>
+            </div>
+            <div class="brand">
+                <label>Owl <span>Coffee</span></label>
+            </div>
         </div>
-        <img class="flower11" src="/ESPRO/flower1.png">
-        <img class="carnature" src="/ESPRO/carnature.png">
-        <img class="ice" src="/ESPRO/ice.png">
-        <img class="bagpack" src="/ESPRO/bagpack.png">
-        <img class="banana" src="/ESPRO/banana.png">
-        <img class="stone" src="/ESPRO/stone.png">
     </div>
-
-    <footer>
-        <div class="upper_part">
-            <h2 class="footer_title">NEVER MISS A DROP.</h2>
-            <p class="footer_text">Sign up to be the first to know about exclusive new deals, product launches and more.</p>
-
-        </div>
-
-        <div class="down_part">
-           <img class="logo_white" src="/ESPRO/white espro logo.svg">
-           <h5 class="help"><b>We're here to help.</b></h5>
-           <h5 class="mail">service@espro.com</h5>
-           <h5 class="ipaddress">1.844.377.7622</h5>
-            
-
-           <ul>
-            <li>
-                <b>LEARN</b>
-                <ul>
-                    <li>Blog</li>
-                    <li>Our Story</li>
-                    <li>Brew Guides</li>
-                    <li>Retailers</li>
-                </ul>
-            </li>
-            <li>
-                <b>SUPPORT</b>
-                <ul>
-                    <li>FAQ</li>
-                    <li>Shipping & Returns</li>
-                    <li>Our Guarantee</li>
-                </ul>
-            </li>
-            <li>
-                <b>COMPANY</b>
-                <ul>
-                    <li>Contact</li>
-                    <li>Join Us</li>
-                    <li>Press</li>
-                </ul>
-            </li>
-            <li>
-                <b>CONNECT WITH US</b>
-                <ul>
-                    <li>
-                        <div class="fb_button">
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <button><img src="/ESPRO/facebook.svg"></button></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="insta_button">
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <button><img src="/ESPRO/instagram.svg"></button></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="x_button">
-                            <a href="https://twitter.com/?lang=en" target="_blank">
-                                <button><img src="/ESPRO/twitter.svg"></button></a>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        </div>
-
-    </footer>
-
 
 </body>
+
 </html>
