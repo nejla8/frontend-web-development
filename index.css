@@ -70,15 +70,20 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
-      animation: zoomIn 2s ease-in-out;
+      animation: bounceIn 1.5s ease-in-out;
   }
 
-  @keyframes zoomIn {
+  @keyframes bounceIn {
     0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
         transform: scale(1.1);
     }
     100% {
         transform: scale(1);
+        opacity: 1;
     }
 }
   
