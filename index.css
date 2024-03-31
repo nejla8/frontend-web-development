@@ -576,3 +576,10 @@
       }
   
   }
+
+
+$primary-color: #ce9e7e;
+
+.fa-youtube {
+  color: $primary-color;
+}
