@@ -4,7 +4,7 @@
 
 Welcome to the Coffee Web Page project! This repository contains the frontend code for a web page dedicated to coffee. The web page showcases various aspects of coffee, including products, blog posts, brewing guides, and more. It's a frontend web development project developed using HTML and CSS.
 
-Preview of the Web Page https://d.pr/v/M15yRT
+Preview of the Web Page https://d.pr/v/R0T9ia
 
 ## Table of Contents
 
