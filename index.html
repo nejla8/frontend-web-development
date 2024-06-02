@@ -13,6 +13,9 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Owl Coffee</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 </head>
 
 <body>
@@ -295,7 +298,191 @@
             </div>
         </div>
     </div>
+    
+<!-- Add modal, requirement: interactive gallery -->
+    
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
 
+<!-- JavaScript for modal functionality -->
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal
+var img = document.getElementsByClassName("card-image");
+var modalImg = document.getElementById("img01");
+
+for (var i = 0; i < img.length; i++) {
+  img[i].onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.getElementsByTagName('img')[0].src;
+  }
+}
+
+// Close the modal
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+ <!-- Adding a button to toggle content -->
+<button onclick="toggleContent()">Toggle Content</button>
+
+<!-- JavaScript for toggling content -->
+<script>
+function toggleContent() {
+  var x = document.getElementById("contentToToggle");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+    <!-- Add buttons to switch themes -->
+<button onclick="setTheme('light')">Light Theme</button>
+<button onclick="setTheme('dark')">Dark Theme</button>
+
+<!-- JavaScript for theme switching -->
+<script>
+function setTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+}
+
+// Load theme from local storage if set
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  setTheme(savedTheme);
+}
+</script>
+
+    <!-- Add accordion menu markup -->
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>Content 1</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Content 2</p>
+</div>
+
+<!-- JavaScript for accordion functionality -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+    <!-- Add additional form fields -->
+<input type="password" id="password" name="password" required>
+<input type="password" id="confirm_password" name="confirm_password" required>
+
+<!-- JavaScript for password strength indicator -->
+<script>
+var password = document.getElementById("password");
+var confirm_password = document.getElementById("confirm_password");
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+
+function validatePassword() {
+  if (password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords don't match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+</script>
+
+    <!-- JavaScript for fetching JSON data -->
+<script>
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    // Use data to populate content dynamically
+  })
+  .catch(error => console.error('Error fetching data:', error));
+</script>
+
+<script src="dataHandler.js"></script>
+
+    <!-- JavaScript for form submission with AJAX -->
+<script>
+document.getElementById('myForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var formData = new FormData(this);
+
+  fetch('submit.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    console.log(data); // Log success message
+  })
+  .catch(error => console.error('Error submitting form:', error));
+});
+</script>
+<script src="jquery.validate.min.js"></script>
+    
+    <!-- Add toastr library -->
+<script src="toastr.min.js"></script>
+
+<!-- JavaScript for displaying toastr messages -->
+<script>
+toastr.success('Success message');
+toastr.error('Error message');
+</script>
+    
+    <script src="toastr.min.js"></script>
+
+    <!-- Add Vue.js library -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+<!-- Add Vue app -->
+<div id="app">
+  <!-- Your single-page application content here -->
+</div>
+
+<!-- JavaScript for Vue app -->
+<script>
+new Vue({
+  el: '#app',
+  // Define components and functionality here
+});
+</script>
+
+    <!-- Add a button to view more details -->
+<button onclick="viewMore()">View More</button>
+
+<!-- JavaScript for viewing more details -->
+<script>
+function viewMore() {
+  // Redirect user to a new page with more details
+  window.location.href
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+    
 </body>
 
 </html>
