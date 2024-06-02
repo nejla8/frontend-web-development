@@ -40,6 +40,3 @@ To get a copy of this project up and running on your local machine, follow these
 3. **Open the HTML file in your browser**:
 
     Open the `index.html` file in your preferred web browser.
-
-## Folder Structure
-
